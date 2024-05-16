@@ -8,6 +8,10 @@ def printArray(nums: Array[Array[Int]]) : Unit = {
 }
 
 def allocateSeat(nums: Array[Array[Int]] ,seatNo : Int) :Array[Array[Int]] = {
+    if(seatNo == 0 ){
+        println("Invalid seat no")
+        return nums
+    }
     val list = List(1, 2,3,4,5,6,7,8,9)
     var f = 0
     val x = list.contains(seatNo)
